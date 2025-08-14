@@ -4,7 +4,7 @@ metadata:
   name: alpine-app1
   namespace: argo-develop
 spec:
-  project: default
+  project: testeargo
   source:
     repoURL: 'https://github.com/alpachecoNuageit/TESTEARGODEVELOP.git'
     targetRevision: HEAD
