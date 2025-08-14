@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alpine-app1
+  namespace: app-teste-pipeline-argo-develop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alpine1
+  template:
+    metadata:
+      labels:
+        app: alpine1
+    spec:
+      containers:
+      - name: alpine
+        image: alpine:latest
+        command: ["sh", "-c", "sleep 3600"]
