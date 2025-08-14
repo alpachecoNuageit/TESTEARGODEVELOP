@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: pipeline-argo-develop
+  namespace: argocd-develop
+spec:
+  description: Projeto para testes de pipeline Argo CD
+  sourceRepos:
+    - 'https://github.com/alpachecoNuageit/TESTEARGODEVELOP.git'
+  destinations:
+    - namespace: app-teste-pipeline-argo-develop
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
+  namespaceResourceWhitelist:
+    - group: '*'
+      kind: '*'
