@@ -17,7 +17,7 @@ spec:
     metadata:
       name: '{{name}}'
     spec:
-      project: default
+      project: testeargo
       source:
         repoURL: 'https://github.com/alpachecoNuageit/TESTEARGODEVELOP.git'
         targetRevision: HEAD
