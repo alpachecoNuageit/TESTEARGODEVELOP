@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: alpine-app1
-  namespace: argo-develop
+  namespace: argocd-develop
 spec:
   project: testeargo
   source:
