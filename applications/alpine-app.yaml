@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: alpine-app1
+  namespace: argo-develop
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/alpachecoNuageit/TESTEARGODEVELOP.git'
+    targetRevision: HEAD
+    path: apps/app1
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: app-teste-pipeline-argo-develop
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
