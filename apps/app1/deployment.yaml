@@ -4,7 +4,7 @@ metadata:
   name: alpine-app1
   namespace: app-teste-pipeline-argo-develop
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: alpine1
