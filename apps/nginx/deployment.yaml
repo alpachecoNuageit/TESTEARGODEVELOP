@@ -4,6 +4,7 @@ metadata:
   name: nginx
   labels:
     app: nginx
+  namespace: app-teste-pacheco
 spec:
   replicas: 2
   selector:
