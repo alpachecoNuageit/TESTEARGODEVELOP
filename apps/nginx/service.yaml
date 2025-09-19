@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx
+  namespace: app-teste-pacheco
 spec:
   selector:
     app: nginx
